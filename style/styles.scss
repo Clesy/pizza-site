@@ -1,3 +1,4 @@
+@import 'variables.scss';
 @mixin flexibility {
     display: flex;
     justify-content: space-between;
@@ -14,6 +15,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    font-family: $fontfamily;
 }
 
 * {
@@ -22,7 +24,7 @@ body {
 
 .container {
     width: 1200px;
-    margin: 0 auto;
+    margin: $margin;
     padding: 0px;
 }
 
@@ -233,7 +235,7 @@ body {
 .placesContainer {
     text-align: center;
     width: 800px;
-    margin: auto;
+    margin: $margin;
 }
 
 .tab {

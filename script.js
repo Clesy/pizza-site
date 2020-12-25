@@ -1,3 +1,12 @@
+$(function() {
+    $(".servicesInfo").sortable();
+});
+
+function hideImg() {
+    let hide = document.getElementsByClassName(".servicesInfo")
+    hide = this.style.display = 'none';
+}
+
 let slideAutoIndex = 0;
 showAutoSlides();
 
@@ -37,4 +46,8 @@ function openCity(evt, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+function clickAlert() {
+    alert('Согласится с условиями и отправить данные с формы!')
 }

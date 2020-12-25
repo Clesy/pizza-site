@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/styles.css" media="print" onload="this.media='all'; this.onload=null;">
     <title>Document</title>
 </head>
 
@@ -39,7 +39,7 @@
                     <p>Услуги</p>
                 </div>
                 <hr/>
-                <div class="servicesInfo">
+                <div class="servicesInfo" onclick=hideImg()>
                     <div class="servicesInfoPhoto">
                         <img src="./image/pres.jpg" alt="">
                         <p>Презентация от шефов</p>
@@ -57,7 +57,7 @@
                         <p>Отели</p>
                     </div>
                     <div class="servicesInfoPhoto">
-                        <img src="./image/cour.jpg" alt="">
+                        <img src="./image/cour.jpg" alt="" srcset="./image/cour.jpg 200w" srcset="./image/cour.jpg 300w" srcset="./image/cour.jpg 400w">
                         <p>Курсы кулинарии </p>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                                     <input type="radio" name="work">4
                                     <input type="radio" name="work">5
                                 </p>
-                                <button type="submit" onclick=alertDialog() id="btn">Отправить</button>
+                                <button type="submit" onclick=clickAlert() id="btn">Отправить</button>
                             </form>
                         </div>
                     </div>
@@ -207,14 +207,19 @@
                 <div class="panel">
                     <p>Lorem ipsum...</p>
                 </div>
-                <!-- </div> -->
             </div>
         </div>
         </div>
     </section>
+    <section>
 
-    <script src="./script.js "></script>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    </section>
+    <script async src="./script.js "></script>
+    <script src="../pizza-site/loadCSS/src/loadCSS.js">
+        loadCSS("./style/style.css")
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
 </body>
 
 </html>
