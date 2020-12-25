@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <div class="headerImg">
+                    <img src="./image/logo.png" alt="">
+                </div>
+                <nav class="nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Страны</a></li>
+                    <li><a href="#">Места</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="intro">
+            <img src="./image/intro.jpg" alt="">
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section>
+        <div class="services">
+            <div class="container">
+                <div class="servicesHeading">
+                    <p>Услуги</p>
+                </div>
+                <hr/>
+                <div class="servicesInfo">
+                    <div class="servicesInfoPhoto">
+                        <img src="./image/pres.jpg" alt="">
+                        <p>Презентация от шефов</p>
+                    </div>
+                    <div class="servicesInfoPhoto">
+                        <img src="./image/put.jpg" alt="">
+                        <p>Путёвки</p>
+                    </div>
+                    <div class="servicesInfoPhoto">
+                        <img src="./image/exs.jpg" alt="">
+                        <p>Экскурсия </p>
+                    </div>
+                    <div class="servicesInfoPhoto">
+                        <img src="./image/hot.jpg" alt="">
+                        <p>Отели</p>
+                    </div>
+                    <div class="servicesInfoPhoto">
+                        <img src="./image/cour.jpg" alt="">
+                        <p>Курсы кулинарии </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- COUNTRY -->
+    <section>
+        <div class="country">
+            <div class="slideshow-container">
+                <div class="container">
+                    <div class="countryHeading">
+                        <p>Страны</p>
+                    </div>
+                    <hr/>
+                    <div class="slides fade">
+                        <h3>Франция</h3>
+                        <img src="./image/fra.jpg">
+                        <p>Цена: 10500</p>
+                    </div>
+                    <div class="slides fade ">
+                        <h3>Италия</h3>
+                        <img src="./image/ital.jpg ">
+                        <p>Цена: 10500</p>
+                    </div>
+                    <div class="slides fade ">
+                        <h3>Испания</h3>
+                        <img src="./image/isp.jpg ">
+                        <p>Цена: 10500</p>
+                    </div>
+                    <div class="slides fade ">
+                        <h3>Мексика</h3>
+                        <img src="./image/mex.jpg ">
+                        <p>Цена: 10500</p>
+                    </div>
+                    <div class="slides fade ">
+                        <h3>США</h3>
+                        <img src="./image/cha.jpg ">
+                        <p>Цена: 10500</p>
+                    </div>
+                </div>
+                <div class="dot-container ">
+                    <span class="dot " onclick="currentSlide(1) "></span>
+                    <span class="dot " onclick="currentSlide(2) "></span>
+                    <span class="dot " onclick="currentSlide(3) "></span>
+                    <span class="dot " onclick="currentSlide(4) "></span>
+                    <span class="dot " onclick="currentSlide(5) "></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PLACES -->
+    <section>
+        <div class="places">
+            <div class="continer">
+                <div class="placesHeading">
+                    <p>Места</p>
+                </div>
+                <hr/>
+                <div class="placesContainer">
+                    <div class="tab">
+                        <div class="tabs">
+                            <img src="./image/spontini.jpg" alt="" class="tablinks" onclick="openCity(event, 'Milan')">
+                            <p>Пиццерия Spontini в Милане</p>
+                        </div>
+                        <div class="tabs">
+                            <img src="./image/uno.jpg" alt="" class="tablinks" onclick="openCity(event, 'Chicago')">
+                            <p>Пиццерия Uno в Чикаго</p>
+                        </div>
+                        <div class="tabs">
+                            <img src="./image/da-baffetto.jpg" alt="" class="tablinks" onclick="openCity(event, 'Rome')">
+                            <p>Пиццерия Da Baffetto в Риме</p>
+                        </div>
+
+                    </div>
+                    <div class="placesCities">
+                        <div id="Chicago" class="tabcontent">
+                            <p>В масштабах такого крупного города, как Чикаго, пиццерия «Уно» подобно песчинке. Однако это заведение хорошо известно не только коренным обитателям мегаполиса, но и многим туристам. Для многих приезжих пиццерия – однозначно
+                                культовое место. Легендарное кафе стало таковым неслучайно. О нем стало известно во всем мире после того, как в далеком 1943 году здесь сотворили знаменитую чикагскую пиццу. И после этого кафе стало культовым местом для
+                                любителей так называемой толстой, то есть «не европейской пиццы». Что касается пузатой пиццы, изготовленной в 1943 году, то корж в этой пицце не был плоским, как обычно. Он был сделан в виде тарелочки из теста. И в эту
+                                самую тарелочку наложили много-много начинки. Поэтому, когда говорят о чикагской пицце, то говорят именно о пузатой пицце, которую покрывает очень толстый слой сыра и томатного соуса. И поныне разгораются дебаты о том,
+                                к кому пришла такая неординарная идея – испечь гигантскую пиццу..</p>
+                        </div>
+
+                        <div id="Rome" class="tabcontent">
+                            <p>Пиццерия «У Баффетто» находится за ни чем примечательной дверью, однако многих туристов это может заинтересовать, что же там такое? Сюда ежедневно приходят десятки людей, и только ради того, чтобы отведать пиццы от дедушки
+                                Баффетто. Единственный недостаток пиццерии – это очередь, однако стоит закрыть глаза на такие неудобства, поскольку «Маргарита» от Баффето, считается самой изумительной и вкусной пиццей во всем Риме. Pizzeria Da Baffetto
+                                – это семейный бизнес, которому практически 50 лет. Блестяще отлаженный сервис, отличные официанты и все точно в срок. И вот на вашей столе изумительная, похнущая пицца, от которой слюнки так и тянуться. За 25 евро, в которые
+                                входит не только пицца, но и бокал пива, вы сможете наесться на целый день</p>
+                        </div>
+
+                        <div id="Milan" class="tabcontent">
+                            <p>Милан славится своими помидорами и сыром, вот два ингридиента, которые так популярны и являются гордостью пиццерии «Спонтини». Здесь вам подадут великолепную «Маргариту», которая кстати является единственной в меню, так что
+                                не тратьте время на поиски иных пицц в меню. Сразу оговоримся, при заказе вас спросят, как и где, вы будете наслаждаться этим пышащее жаром сокровище. Оставаться в заведение не обязательно. Если вы решите прогуляться по
+                                городу с бумажным пакетиком, наслаждаясь пиццей, дурным тоном это не считается, а наоборот … Приятного аппетита!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="reviews">
+            <div class="container">
+                <div class="reviewsHeading">
+                    <p>Отзывы</p>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="container-form">
+                        <div class="column_form">
+                            <form action="#">
+                                <label for="fname">ФИО</label>
+                                <input type="text" id="fname_contact_us" name="firstname" required placeholder="Ваше ФИО">
+                                <label for="lname">Номер телефона</label>
+                                <input type="text" id="lname_contact_us" name="lastname" required placeholder="Ваш номер телефона">
+                                <label for="fname">Адрес электронной почты</label>
+                                <input type="email" id="email_contact_us" name="email" required placeholder="Адрес электронной почты*">
+
+                                <p><b>Текст отзыва*</b></p>
+                                <textarea name="" id="" cols="30" rows="7" placeholder="..."></textarea>
+                                <p>Ваша оценка:</p>
+                                <p><input type="radio" name="work">1
+                                    <input type="radio" name="work">2
+                                    <input type="radio" name="work">3
+                                    <input type="radio" name="work">4
+                                    <input type="radio" name="work">5
+                                </p>
+                                <button type="submit" onclick=alertDialog() id="btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="accordionReviews"> -->
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="./script.js "></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</body>
+
+</html>
