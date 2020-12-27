@@ -1,10 +1,22 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ebdc95; }
 
 * {
   box-sizing: border-box; }
+
+hr {
+  align-content: center;
+  width: 1000px;
+  border: 1px solid #222; }
+
+.siteFirst {
+  background-color: #ebdc95; }
+
+.siteSecond {
+  background-color: #e7d580; }
 
 .container {
   width: 1200px;
@@ -12,7 +24,7 @@ body {
   padding: 0px; }
 
 .header {
-  background-color: burlywood; }
+  background-color: #ebdc95; }
 
 /*NAVIGATION*/
 .menu {
@@ -35,7 +47,11 @@ body {
       color: #6e4040; }
       .nav li a:hover {
         color: white;
-        transition: 0.8s; }
+        transition: 0.8s;
+        -webkit-transition: 0.8s;
+        -moz-transition: 0.8s;
+        -ms-transition: 0.8s;
+        -o-transition: 0.8s; }
 
 /*HEADER IMAGE (SMALL PIZZA)*/
 .headerImg img {
@@ -58,12 +74,16 @@ body {
   color: black;
   font-size: 30px;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 20px;
+  margin: 0; }
 
 .servicesInfo {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 10px;
+  height: auto; }
 
 .servicesInfoPhoto img {
   border-radius: 16px;
@@ -84,7 +104,8 @@ body {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-  margin: 0 0 20px 0; }
+  padding: 20px;
+  margin: 0; }
 
 /*SLIDER*/
 .slideshow-container {
@@ -106,8 +127,7 @@ body {
 .dot-container {
   display: flex;
   justify-content: center;
-  padding: 10px;
-  background: #ddd; }
+  padding: 10px; }
 
 .dot {
   display: flex;
@@ -116,7 +136,7 @@ body {
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -155,7 +175,9 @@ body {
   color: black;
   font-size: 30px;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 20px;
+  margin: 0; }
 
 .placesCities {
   display: flex;
@@ -164,7 +186,7 @@ body {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc; }
+  border: 1px solid #222; }
 
 .placesContainer {
   text-align: center;
@@ -181,22 +203,36 @@ body {
   width: 250px; }
 
 /*REVIEW*/
-.reviewsHeading {
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
+
+.reviewsHeading p {
   color: black;
   font-size: 30px;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 20px;
+  margin: 0; }
 
 /*FORM*/
 .container-form {
   width: 600px;
-  height: 100%;
-  position: relative; }
+  height: 100%; }
 
 .column_form {
   border: 1px solid whitesmoke;
   border-radius: 20px;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
 
 #btn {
   background-color: #E74C3C;
@@ -235,12 +271,6 @@ textarea {
   -ms-border-radius: 20px;
   -o-border-radius: 20px; }
 
-.column_form {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px; }
-
 .row::after {
   content: "";
   display: table;
@@ -252,18 +282,36 @@ textarea {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 50%;
   text-align: left;
   border: none;
+  border-radius: 10px;
   outline: none;
-  transition: 0.4s; }
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px; }
+  .accordion h3 {
+    outline: none; }
+
+.accordionReview p {
+  display: flex;
+  color: black;
+  background-color: white;
+  height: 40px;
+  padding-left: 30px;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
 
 .active:hover,
-.accordion:hover {
+#accordion:hover {
   background-color: #ccc; }
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden; }

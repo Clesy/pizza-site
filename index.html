@@ -32,7 +32,7 @@
         </div>
     </section>
     <!-- SERVICES -->
-    <section>
+    <section class="siteFirst">
         <div class="services">
             <div class="container">
                 <div class="servicesHeading">
@@ -62,11 +62,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- COUNTRY -->
-    <section>
+    <section class="siteSecond">
         <div class="country">
             <div class="slideshow-container">
                 <div class="container">
@@ -111,13 +110,13 @@
         </div>
     </section>
     <!-- PLACES -->
-    <section>
+    <section class="siteFirst">
         <div class="places">
             <div class="continer">
                 <div class="placesHeading">
                     <p>Места</p>
                 </div>
-                <hr/>
+                <hr>
                 <div class="placesContainer">
                     <div class="tab">
                         <div class="tabs">
@@ -160,55 +159,58 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="siteSecond">
         <div class="reviews">
             <div class="container">
                 <div class="reviewsHeading">
                     <p>Отзывы</p>
                 </div>
                 <hr/>
-                <div class="row">
-                    <div class="container-form">
-                        <div class="column_form">
-                            <form action="#">
-                                <label for="fname">ФИО</label>
-                                <input type="text" id="fname_contact_us" name="firstname" required placeholder="Ваше ФИО">
-                                <label for="lname">Номер телефона</label>
-                                <input type="text" id="lname_contact_us" name="lastname" required placeholder="Ваш номер телефона">
-                                <label for="fname">Адрес электронной почты</label>
-                                <input type="email" id="email_contact_us" name="email" required placeholder="Адрес электронной почты*">
+                <div class="reviewColumn">
+                    <div class="row">
+                        <div class="container-form">
+                            <div class="column_form">
+                                <form action="#">
+                                    <label for="fname">ФИО</label>
+                                    <input type="text" id="fname_contact_us" name="firstname" required placeholder="Ваше ФИО">
+                                    <label for="lname">Номер телефона</label>
+                                    <input type="text" id="lname_contact_us" name="lastname" required placeholder="Ваш номер телефона">
+                                    <label for="fname">Адрес электронной почты</label>
+                                    <input type="email" id="email_contact_us" name="email" required placeholder="Адрес электронной почты*">
 
-                                <p><b>Текст отзыва*</b></p>
-                                <textarea name="" id="" cols="30" rows="7" placeholder="..."></textarea>
-                                <p>Ваша оценка:</p>
-                                <p><input type="radio" name="work">1
-                                    <input type="radio" name="work">2
-                                    <input type="radio" name="work">3
-                                    <input type="radio" name="work">4
-                                    <input type="radio" name="work">5
-                                </p>
-                                <button type="submit" onclick=clickAlert() id="btn">Отправить</button>
-                            </form>
+                                    <p><b>Текст отзыва</b></p>
+                                    <textarea name="" id="" cols="30" rows="7" placeholder="..."></textarea>
+                                    <p>Ваша оценка:</p>
+                                    <p><input type="radio" name="work">1
+                                        <input type="radio" name="work">2
+                                        <input type="radio" name="work">3
+                                        <input type="radio" name="work">4
+                                        <input type="radio" name="work">5
+                                    </p>
+                                    <button type="submit" onclick=clickAlert() id="btn">Отправить</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="accordionReviews"> -->
-                <button class="accordion">Section 1</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <button class="accordion">Section 2</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
+                <!-- ACCORDIO -->
+                <div class="reviewColumn">
+                    <div class="accordion">
+                        <h3> Section 1</h3>
+                        <div class="accordionReview">
+                            <p>223232323fwfdggbgfd</p>
+                        </div>
+                        <h3> Section 2</h3>
+                        <div class="accordionReview">
+                            <p>223232323fwfdggbgfd</p>
+                        </div>
+                        <h3> Section 3</h3>
+                        <div class="accordionReview">
+                            <p>223232323fwfdggbgfd</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <section>

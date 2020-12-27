@@ -1,18 +1,31 @@
+/* DRAG AND DROP IMAGE*/
+
 $(function() {
     $(".servicesInfo").sortable();
 });
 
-function hideImg() {
-    let hide = document.getElementsByClassName(".servicesInfo")
-    hide = this.style.display = 'none';
-}
+/* HIDE IMAGE */
+
+$(".servicesInfoPhoto").click(function() {
+    this.style.display = 'none';
+});
+
+/*  */
+
+$(function() {
+    $(".accordion").accordion();
+});
 
 let slideAutoIndex = 0;
 showAutoSlides();
 
+/* NEXT SLIDES */
+
 function plusSlides(n) {
     showAutoSlides(slideAutoIndex += n);
 }
+
+/* BACK SLIDES */
 
 function currentSlide(n) {
     showAutoSlides(slideAutoIndex = n)
@@ -47,6 +60,8 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+/* SHOW MESSAGE ON CLICK BUTTON */
 
 function clickAlert() {
     alert('Согласится с условиями и отправить данные с формы!')
